@@ -45,7 +45,7 @@ mysql-connector-python
 pip install mysql-connector-python
 
 1. Database Setup
-When you run the main file Database automatically create
+Make a schema user-system then run the main file Database table automatically create
 2. Configuration
 In config.py file change your name and the password of the database so that you can connect with the database:
 3. Run the Application
@@ -58,8 +58,8 @@ curl -X POST http://localhost:8080/register \ -d '{"name": "Anshu Yadav", "email
 
 # Using Form Data
 curl -X POST http://localhost:8080/register \
-  -d "name=Anshu Yadav" \
-  -d "email=anshu@example.com" \
+  -d "name=Your name" \
+  -d "email=example123@example.com" \
   -d "password=SecurePass123!"
 Response:
 
@@ -67,13 +67,13 @@ json
 {
   "message": "User registered successfully",
   "user_id": "USR-9D6BC708",
-  "name": "Anshu Yadav",
-  "email": "anshu@example.com"
+  "name": "Your name",
+  "email": "example123@example.com"
 }
 User Login
 bash
 # Login with Email (JSON)
-curl -X POST http://localhost:8080/login \ -d '{"email": "anshu@example.com", "password": "SecurePass123!"}'
+curl -X POST http://localhost:8080/login \ -d '{"email": "example123@example.com", "password": "SecurePass123!"}'
 
 # Login with User ID (Form Data)
 curl -X POST http://localhost:8080/login \
@@ -85,8 +85,8 @@ json
 {
   "message": "Login successful",
   "user_id": "USR-9D6BC708",
-  "name": "Anshu Yadav",
-  "email": "anshu@example.com"
+  "name": "your name",
+  "email": "example@example.com"
 }
 
 Security Features
