@@ -41,12 +41,11 @@ MySQL Server
 Required Python packages: 
 mysql-connector-python
 
+# Install required packages
+pip install mysql-connector-python
+
 1. Database Setup
-sql
-CREATE DATABASE user_management;
-CREATE USER 'app_user'@'localhost' IDENTIFIED BY 'your_password';
-GRANT ALL PRIVILEGES ON user_management.* TO 'app_user'@'localhost';
-FLUSH PRIVILEGES;
+When you run the main file Database automatically create
 2. Configuration
 Create config.py:
 3. Run the Application
@@ -172,22 +171,3 @@ Verify credentials in config.py
 Ensure database exists
 
 Port Already in Use
-
-bash
-# Find and kill process using port 8080
-netstat -ano | findstr :8080
-taskkill /PID <PID> /F
-Import Errors
-
-bash
-# Install required packages
-pip install mysql-connector-python
-
-Divyansh Yadav - Initial design and implementation
-
-Support
-For support and questions:
-
-Create an issue in the repository
-
-Email: mrdk45789@gmail.com
