@@ -47,7 +47,7 @@ pip install mysql-connector-python
 1. Database Setup
 When you run the main file Database automatically create
 2. Configuration
-Create config.py:
+In config.py file change your name and the password of the database so that you can connect with the database:
 3. Run the Application
 python API.py
 📊 API Usage Examples
