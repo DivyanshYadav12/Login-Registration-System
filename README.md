@@ -16,29 +16,6 @@ MySQL Database with optimized indexing
 Method	Endpoint	Description	Request Body
 POST	/register	Register new user	name, email, password, age (optional), dob (optional)
 POST	/login	Authenticate user	email OR user_id, password
-🗄️ Database Architecture
-Schema Design
-sql
-CREATE TABLE users (
-    id VARCHAR(50) PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
-    password_hash VARCHAR(255) NOT NULL,
-    age INT,
-    dob DATE,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-    last_login DATETIME,
-    is_active BOOLEAN DEFAULT TRUE
-);
-Indexes for Performance
-PRIMARY KEY (id) - Fast user ID lookups
-
-UNIQUE (email) - Fast email lookups and duplicate prevention
-
-INDEX idx_created_at - Analytics and reporting
-
-INDEX idx_last_login - User engagement analysis
-
 🔧 System Architecture
 Data Flow Diagram
 
@@ -46,7 +23,7 @@ Data Flow Diagram
 <img width="5091" height="4803" alt="Sysyem-Architecture" src="https://github.com/user-attachments/assets/5d3571b6-fba3-4181-a2a7-6cccfac4c0d0" />
 
 
-Security Architecture::
+# Security Architecture::
 Security Layers:
     ┌─────────────────┐
     │   API Layer     │  ← Input Validation, Rate Limiting
@@ -165,14 +142,15 @@ Login Success: 99.8%
 
 Uptime: 99.9%
 
-Error Handling
+# Error Handling
 Error Code	Scenario	Response
 400	Invalid input data	{"error": "Description"}
 401	Invalid password	{"error": "Invalid password"}
 404	User not found	{"error": "User not found"}
 409	Email already registered	{"error": "Email already registered"}
 500	Server/database error	{"error": "Database error"}
-Future Enhancements
+
+# Future Enhancements
 Planned Features
 Password Reset - Secure token-based password recovery
 
@@ -184,9 +162,7 @@ Two-Factor Authentication - Enhanced security
 
 API Rate Limiting - Prevent abuse and DDoS attacks
 
-Caching Layer - Redis for frequently accessed data
-
-#Troubleshooting Common Issues:
+# Troubleshooting Common Issues:
 Database Connection Failed
 
 Check MySQL service status
