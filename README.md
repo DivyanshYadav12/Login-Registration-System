@@ -186,8 +186,7 @@ API Rate Limiting - Prevent abuse and DDoS attacks
 
 Caching Layer - Redis for frequently accessed data
 
-Troubleshooting
-Common Issues
+#Troubleshooting Common Issues:
 Database Connection Failed
 
 Check MySQL service status
