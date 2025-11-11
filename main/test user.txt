@@ -1,0 +1,76 @@
+test user 
+
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=manoj" -d "email=manoj@example.com" -d "password=Manoj@123" -d "age=58" -d "dob=1888-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=manoj@example.com" -d "password=Manoj@123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=manoj" -d "email=manojsharma@example.com" -d "password=Manoj@123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=manojsharma@example.com" -d "password=Manoj@123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=Suraj" -d "email=Suraj@example.com" -d "password=Surajsh@123" -d "age=45" -d "dob=1999-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=Suraj@example.com" -d "password=Surajsh@123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=priyanka" -d "email=priyanka@example.com" -d "password=priyankA@123" -d "age=20" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=priyanka@example.com" -d "password=priyankA@123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=Divya" -d "email=panday@example.com" -d "password=Divyapan@123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=panday@example.com" -d "password=Divyapan@123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=ansh" -d "email=pandit@example.com" -d "password=Anshpan@123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=pandit@example.com" -d "password=Anshpan@123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=swaroop" -d "email=verma@example.com" -d "password=Swaroop@123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=verma@example.com" -d "password=Swaroop@123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=harsh" -d "email=harsh@example.com" -d "password=Harshyadav@123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=harsh@example.com" -d "Harshyadav@123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=darshan" -d "email=chaubey@example.com" -d "password=Darshan#123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=chaubey@example.com" -d "password=Darshan#123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=shubham" -d "email=shubham@example.com" -d "password=Shubham1@23" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=shubham@example.com" -d "password=Shubham1@23""
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=payal" -d "email=payal@example.com" -d "password=payal123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=payal@example.com" -d "password=payal123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=Aditya" -d "email=aditya@example.com" -d "password=aditya123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=aditya@example.com" -d "password=aditya123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=pratap" -d "email=pratap@example.com" -d "password=pratap123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=pratap@example.com" -d "password=pratap123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=sweeti" -d "email=sweeti@example.com" -d "password=sweeti123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=sweeti@example.com" -d "password=sweeti123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=prakhar" -d "email=prakhar@example.com" -d "password=prakhar123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=prakhar@example.com" -d "password=prakhar123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=mahi" -d "email=mahi@example.com" -d "password=mahimahi123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=mahi@example.com" -d "password=mahimahi123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=saroj" -d "email=saroj@example.com" -d "password=Saroj@123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=saroj@example.com" -d "password=Saroj@123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=mayank" -d "email=mayank@example.com" -d "password=mayankKum@123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=mayank@example.com" -d "password=mayankKum@123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=Anuj" -d "email=anujkumar@example.com" -d "password=anujkumar123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=anujkumar@example.com" -d "password=anujkumar123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=tarun" -d "email=tiwari@example.com" -d "password=tarunti123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "email=tiwari@example.com" -d "password=tarunti123"
+
+--------->curl.exe -X POST http://localhost:8080/register -d "name=Anshu" -d "email=Anshuya@example.com" -d "password=anshuyadav123" -d "age=35" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "user_id=USR-9FD2083F" -d "password=anshuyadav123"
+
+
+curl.exe -X POST http://localhost:8080/register -d "name=Anshu yadav" -d "email=Anshuyadav@example.com" -d "password=Ansh@1234" -d "age=30" -d "dob=1990-01-01"
+curl.exe -X POST http://localhost:8080/login -d "user_id=USR-9FD2083F" -d "password=Ansh@1234"
+
+
+
+
+
+
+
