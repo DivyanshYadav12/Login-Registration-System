@@ -43,8 +43,7 @@ INDEX idx_last_login - User engagement analysis
 Data Flow Diagram
 
 
-<img width="5269" height="4883" alt="System-Architecture" src="https://github.com/user-attachments/assets/6551f704-75a9-4e32-80e6-677ad2e84cfc" />
-
+<img width="5091" height="4803" alt="Sysyem-Architecture" src="https://github.com/user-attachments/assets/5d3571b6-fba3-4181-a2a7-6cccfac4c0d0" />
 
 
 Security Architecture
