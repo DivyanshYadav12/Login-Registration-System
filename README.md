@@ -88,8 +88,9 @@ json
   "name": "your name",
   "email": "example@example.com"
 }
+# A Dummy user-data-file is available in the main folder;
 
-Security Features
+# Security Features
 Password Requirements
 Minimum 8 characters
 
