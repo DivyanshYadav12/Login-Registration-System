@@ -46,8 +46,7 @@ Data Flow Diagram
 <img width="5091" height="4803" alt="Sysyem-Architecture" src="https://github.com/user-attachments/assets/5d3571b6-fba3-4181-a2a7-6cccfac4c0d0" />
 
 
-Security Architecture
-text
+Security Architecture::
 Security Layers:
     ┌─────────────────┐
     │   API Layer     │  ← Input Validation, Rate Limiting
@@ -61,10 +60,9 @@ Security Layers:
 🛠️ Installation & Setup
 Prerequisites
 Python 3.7+
-
 MySQL Server
-
-Required Python packages: mysql-connector-python
+Required Python packages: 
+mysql-connector-python
 
 1. Database Setup
 sql
@@ -74,28 +72,13 @@ GRANT ALL PRIVILEGES ON user_management.* TO 'app_user'@'localhost';
 FLUSH PRIVILEGES;
 2. Configuration
 Create config.py:
-
-python
-class Config:
-    # Server configuration
-    SERVER_HOST = 'localhost'
-    SERVER_PORT = 8080
-    
-    # Database configuration
-    DB_HOST = 'localhost'
-    DB_USER = 'app_user'
-    DB_PASSWORD = 'your_password'
-    DB_NAME = 'user_management'
 3. Run the Application
-bash
 python API.py
 📊 API Usage Examples
 User Registration
 bash
 # Using JSON
-curl -X POST http://localhost:8080/register \
-  -H "Content-Type: application/json" \
-  -d '{"name": "Anshu Yadav", "email": "anshu@example.com", "password": "SecurePass123!"}'
+curl -X POST http://localhost:8080/register \ -d '{"name": "Anshu Yadav", "email": "anshu@example.com", "password": "SecurePass123!"}'
 
 # Using Form Data
 curl -X POST http://localhost:8080/register \
@@ -114,9 +97,7 @@ json
 User Login
 bash
 # Login with Email (JSON)
-curl -X POST http://localhost:8080/login \
-  -H "Content-Type: application/json" \
-  -d '{"email": "anshu@example.com", "password": "SecurePass123!"}'
+curl -X POST http://localhost:8080/login \ -d '{"email": "anshu@example.com", "password": "SecurePass123!"}'
 
 # Login with User ID (Form Data)
 curl -X POST http://localhost:8080/login \
@@ -131,7 +112,8 @@ json
   "name": "Anshu Yadav",
   "email": "anshu@example.com"
 }
-🔒 Security Features
+
+Security Features
 Password Requirements
 Minimum 8 characters
 
@@ -161,7 +143,7 @@ Data type and length validation
 
 Cross-site scripting (XSS) prevention
 
-🚀 Performance Optimizations
+Performance Optimizations
 Database Indexing Strategy
 Index	Purpose	Performance Impact
 PRIMARY KEY (id)	User lookups by ID	O(1) access
@@ -175,7 +157,7 @@ Login with Email: ~15ms (indexed lookup + hash verification)
 
 Login with User ID: ~10ms (primary key lookup + hash verification)
 
-📈 System Metrics
+System Metrics
 Success Rates
 Registration Success: 99.5%
 
@@ -190,7 +172,7 @@ Error Code	Scenario	Response
 404	User not found	{"error": "User not found"}
 409	Email already registered	{"error": "Email already registered"}
 500	Server/database error	{"error": "Database error"}
-🔮 Future Enhancements
+Future Enhancements
 Planned Features
 Password Reset - Secure token-based password recovery
 
@@ -202,20 +184,9 @@ Two-Factor Authentication - Enhanced security
 
 API Rate Limiting - Prevent abuse and DDoS attacks
 
-Database Replication - High availability setup
-
 Caching Layer - Redis for frequently accessed data
 
-Scalability Improvements
-Horizontal scaling with load balancers
-
-Database read replicas
-
-Microservices architecture
-
-Containerization with Docker
-
-🐛 Troubleshooting
+Troubleshooting
 Common Issues
 Database Connection Failed
 
@@ -236,15 +207,12 @@ Import Errors
 bash
 # Install required packages
 pip install mysql-connector-python
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-👥 Contributors
-Your Name - Initial design and implementation
+Divyansh Yadav - Initial design and implementation
 
-📞 Support
+Support
 For support and questions:
 
 Create an issue in the repository
 
-Email: your.email@example.com
+Email: mrdk45789@gmail.com
