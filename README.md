@@ -14,7 +14,9 @@ MySQL Database with optimized indexing
 
 📋 API Endpoints
 Method	Endpoint	Description	Request Body
+
 POST	/register	Register new user	name, email, password, age (optional), dob (optional)
+
 POST	/login	Authenticate user	email OR user_id, password
 🔧 System Architecture
 Data Flow Diagram
@@ -45,7 +47,7 @@ mysql-connector-python
 pip install mysql-connector-python
 
 1. Database Setup
-Make a schema user-system then run the main file Database table automatically create
+Make a schema "user-system" then run the main file Database table automatically create
 2. Configuration
 In config.py file change your name and the password of the database so that you can connect with the database:
 3. Run the Application
@@ -157,10 +159,6 @@ Password Reset - Secure token-based password recovery
 Session Management - JWT-based stateless authentication
 
 Role-Based Access Control - Multi-level user permissions
-
-Two-Factor Authentication - Enhanced security
-
-API Rate Limiting - Prevent abuse and DDoS attacks
 
 # Troubleshooting Common Issues:
 Database Connection Failed
