@@ -14,11 +14,12 @@ MySQL Database with optimized indexing
 
 📋 API Endpoints
 
-Method	Endpoint	Description	Request Body
-POST	/register	Register new user	name, email, password, age (optional), dob (optional)
-POST	/login	Authenticate user	email OR user_id, password
-POST	/forgot-password	Request password reset	email
-POST	/reset-password	Reset password with token	token, new_password
+|Method |  Endpoint  |	Description  |	Request Body|
+|-----|-----|-----|-----|
+|POST|	/register|	Register new user|	name, email, password, age (optional), dob (optional)| 
+|POST|	/login|	Authenticate user|	email OR user_id, password|
+|POST|	/forgot-password|	Request password reset|	email|
+|POST|	/reset-password|	Reset password with token|	token, new_password|
 🔧 System Architecture
 Data Flow Diagram
 
