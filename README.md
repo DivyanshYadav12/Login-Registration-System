@@ -6,6 +6,8 @@ User Login with email or user ID
 
 Secure Password Hashing using salt + SHA-256
 
+Password Reset with a secure token-based system
+
 Input Validation and SQL injection prevention
 
 RESTful API endpoints
@@ -20,24 +22,22 @@ MySQL Database with optimized indexing
 |POST|	/login|	Authenticate user|	email OR user_id, password|
 |POST|	/forgot-password|	Request password reset|	email|
 |POST|	/reset-password|	Reset password with token|	token, new_password|
+
 🔧 System Architecture
-Data Flow Diagram
+-Data Flow Diagram
 
 <img width="11364" height="6592" alt="Sysyem-Architecture (2)" src="https://github.com/user-attachments/assets/f2f8f4a3-4136-40ab-9c18-2a1734020b4f" />
 
 # Security Architecture::
-Security Layers:
-    ┌─────────────────┐
-    │   API Layer     │  ← Input Validation, Rate Limiting
-    ├─────────────────┤
-    │ Business Logic  │  ← Password Hashing, Email Normalization  
-    ├─────────────────┤
-    │ Database Layer  │  ← Parameterized Queries, Connection Pooling
-    ├─────────────────┤
-    │   MySQL DB      │  ← Indexes, Constraints, ACID Properties
-    └─────────────────┘
+-Security Layers:
+
+ │   API Layer     │  ← Input Validation, Rate Limiting|
+ │ Business Logic  │  ← Password Hashing, Email Normalization|  
+ │ Database Layer  │  ← Parameterized Queries, Connection Pooling|
+ │   MySQL DB      │  ← Indexes, Constraints, ACID Properties|
+    
 🛠️ Installation & Setup
-Prerequisites
+-Prerequisites
 Python 3.7+
 MySQL Server
 Required Python packages: 
@@ -154,7 +154,6 @@ Error Code	Scenario	Response
 
 # Future Enhancements
 Planned Features
-Password Reset - Secure token-based password recovery
 
 Session Management - JWT-based stateless authentication
 
