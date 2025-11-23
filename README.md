@@ -13,17 +13,16 @@ RESTful API endpoints
 MySQL Database with optimized indexing
 
 📋 API Endpoints
+
 Method	Endpoint	Description	Request Body
-
 POST	/register	Register new user	name, email, password, age (optional), dob (optional)
-
 POST	/login	Authenticate user	email OR user_id, password
+POST	/forgot-password	Request password reset	email
+POST	/reset-password	Reset password with token	token, new_password
 🔧 System Architecture
 Data Flow Diagram
 
-
-<img width="5091" height="4803" alt="Sysyem-Architecture" src="https://github.com/user-attachments/assets/5d3571b6-fba3-4181-a2a7-6cccfac4c0d0" />
-
+<img width="11364" height="6592" alt="Sysyem-Architecture (2)" src="https://github.com/user-attachments/assets/f2f8f4a3-4136-40ab-9c18-2a1734020b4f" />
 
 # Security Architecture::
 Security Layers:
