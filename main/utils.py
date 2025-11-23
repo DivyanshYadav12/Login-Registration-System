@@ -28,6 +28,9 @@ def verify_password(stored_hash, password):
 def generate_user_id():
     return "USR-" + str(uuid.uuid4())[:8].upper()
 
+def generate_reset_token():
+    return "RESET-" + str(uuid.uuid4())[:12].upper()
+
 def get_current_time():
     return datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
