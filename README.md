@@ -36,8 +36,8 @@ MySQL Database with optimized indexing
  │ Database Layer  │  ← Parameterized Queries, Connection Pooling|
  │   MySQL DB      │  ← Indexes, Constraints, ACID Properties|
     
-🛠️ Installation & Setup
--Prerequisites
+#🛠️ Installation & Setup
+Prerequisites
 Python 3.7+
 MySQL Server
 Required Python packages: 
