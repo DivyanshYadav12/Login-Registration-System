@@ -32,8 +32,11 @@ MySQL Database with optimized indexing
 -Security Layers:
 
  │   API Layer     │  ← Input Validation, Rate Limiting            |
- │ Business Logic  │  ← Password Hashing, Email Normalization      |  
+ 
+ │ Business Logic  │  ← Password Hashing, Email Normalization      |
+ 
  │ Database Layer  │  ← Parameterized Queries, Connection Pooling  |
+ 
  │   MySQL DB      │  ← Indexes, Constraints, ACID Properties      |
     
 # 🛠️ Installation & Setup
@@ -52,7 +55,8 @@ Make a schema "user-system" then run the main file Database table automatically 
 In config.py file change your name and the password of the database so that you can connect with the database:
 3. Run the Application
 python API.py
-📊 API Usage Examples
+
+# 📊 API Usage Examples
 User Registration
 bash
 # Using JSON
