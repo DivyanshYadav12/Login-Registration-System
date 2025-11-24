@@ -31,12 +31,12 @@ MySQL Database with optimized indexing
 # Security Architecture::
 -Security Layers:
 
- │   API Layer     │  ← Input Validation, Rate Limiting|
- │ Business Logic  │  ← Password Hashing, Email Normalization|  
- │ Database Layer  │  ← Parameterized Queries, Connection Pooling|
- │   MySQL DB      │  ← Indexes, Constraints, ACID Properties|
+ │   API Layer     │  ← Input Validation, Rate Limiting            |
+ │ Business Logic  │  ← Password Hashing, Email Normalization      |  
+ │ Database Layer  │  ← Parameterized Queries, Connection Pooling  |
+ │   MySQL DB      │  ← Indexes, Constraints, ACID Properties      |
     
-#🛠️ Installation & Setup
+# 🛠️ Installation & Setup
 Prerequisites
 Python 3.7+
 MySQL Server
